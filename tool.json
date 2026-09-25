@@ -1,0 +1,214 @@
+{
+  "tool": {
+    "id": "escore-macis",
+    "title": "MACIS (carcinoma papilífero de tireoide)",
+    "short": "Prognóstico do carcinoma papilífero de tireoide",
+    "desc": "Escore MACIS para carcinoma papilífero de tireoide: metástase, idade, ressecção, invasão e tamanho, com a sobrevida câncer-específica em 20 anos.",
+    "lead": "Estima a sobrevida câncer-específica em 20 anos no carcinoma papilífero de tireoide a partir de cinco dados disponíveis após a cirurgia.",
+    "spec": [
+      "cirurgia-de-cabeca-e-pescoco",
+      "endocrinologia-e-metabologia",
+      "cirurgia-oncologica",
+      "oncologia-clinica",
+      "medicina-nuclear"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "idade",
+        "Idade no diagnóstico",
+        "num",
+        {
+          "min": 5,
+          "max": 100,
+          "step": 1,
+          "unit": "anos",
+          "ph": "45"
+        }
+      ],
+      [
+        "tamanho",
+        "Maior diâmetro do tumor",
+        "num",
+        {
+          "min": 0.1,
+          "max": 20,
+          "step": 0.1,
+          "unit": "cm",
+          "ph": "2"
+        }
+      ],
+      [
+        "incompleta",
+        "Ressecção incompleta?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "invasao",
+        "Invasão local (extratireoidiana)?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "metastase",
+        "Metástase a distância?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ]
+    ],
+    "formula": "<p><strong>MACIS</strong> = 3,1 (se idade ≤ 39 anos) ou 0,08 × idade (se ≥ 40 anos) + 0,3 × tamanho do tumor (cm) + 1 (ressecção incompleta) + 1 (invasão local) + 3 (metástase a distância).</p>",
+    "table": [
+      [
+        "MACIS",
+        "Sobrevida câncer-específica em 20 anos"
+      ],
+      [
+        "&lt; 6",
+        "99%"
+      ],
+      [
+        "6 a 6,99",
+        "89%"
+      ],
+      [
+        "7 a 7,99",
+        "56%"
+      ],
+      [
+        "≥ 8",
+        "24%"
+      ]
+    ],
+    "table_note": "Coorte da Mayo Clinic com 1.779 pacientes operados entre 1940 e 1989 (Hay 1993).",
+    "tips": [
+      "O MACIS prediz <strong>mortalidade</strong> pelo câncer; para decidir iodo radioativo e seguimento, use a estratificação de risco de recorrência da ATA.",
+      "A maioria dos pacientes fica abaixo de 6 pontos: o escore separa bem o pequeno grupo de alto risco.",
+      "Idade de 55 anos é o corte do estadiamento TNM (AJCC 8ª edição); o MACIS usa a idade de forma contínua a partir dos 40 anos.",
+      "Foi derivado para carcinoma papilífero: não aplique a carcinoma folicular, medular ou anaplásico."
+    ],
+    "sources": [
+      [
+        "Hay ID et al. Predicting outcome in papillary thyroid carcinoma: development of a reliable prognostic scoring system in a cohort of 1779 patients surgically treated at one institution during 1940 through 1989. Surgery, 1993.",
+        "https://pubmed.ncbi.nlm.nih.gov/8256208/"
+      ]
+    ],
+    "cases": [
+      [
+        "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        {
+          "idade": 35,
+          "tamanho": 2,
+          "incompleta": "0",
+          "invasao": "0",
+          "metastase": "0"
+        },
+        {
+          "raw": {
+            "score": 3.7,
+            "sobrevida": 99
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        {
+          "idade": 55,
+          "tamanho": 5,
+          "incompleta": "1",
+          "invasao": "0",
+          "metastase": "0"
+        },
+        {
+          "raw": {
+            "score": 6.9,
+            "sobrevida": 89
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        {
+          "idade": 60,
+          "tamanho": 4,
+          "incompleta": "0",
+          "invasao": "1",
+          "metastase": "0"
+        },
+        {
+          "raw": {
+            "score": 7,
+            "sobrevida": 56
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        {
+          "idade": 70,
+          "tamanho": 5,
+          "incompleta": "0",
+          "invasao": "0",
+          "metastase": "1"
+        },
+        {
+          "raw": {
+            "score": 10.1,
+            "sobrevida": 24
+          },
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}

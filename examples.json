@@ -1,0 +1,102 @@
+[
+  {
+    "label": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 3.7,
+        "sobrevida": 99
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+    "input": {
+      "idade": 55,
+      "tamanho": 5,
+      "incompleta": "1",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 6.9,
+        "sobrevida": 89
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": 55,
+      "tamanho": 5,
+      "incompleta": "1",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+    "input": {
+      "idade": 60,
+      "tamanho": 4,
+      "incompleta": "0",
+      "invasao": "1",
+      "metastase": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 7,
+        "sobrevida": 56
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": 60,
+      "tamanho": 4,
+      "incompleta": "0",
+      "invasao": "1",
+      "metastase": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+    "input": {
+      "idade": 70,
+      "tamanho": 5,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "1"
+    },
+    "expected": {
+      "raw": {
+        "score": 10.1,
+        "sobrevida": 24
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": 70,
+      "tamanho": 5,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "1"
+    },
+    "expandedZeroOptions": []
+  }
+]
