@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escore-macis · Elucenia · https://github.com/Elucenia/tool-escore-macis
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-macis","title":"MACIS (carcinoma papilífero de tireoide)","fields":[["idade","Idade no diagnóstico","num",{"min":5,"max":100,"step":1,"unit":"anos","ph":"45"}],["tamanho","Maior diâmetro do tumor","num",{"min":0.1,"max":20,"step":0.1,"unit":"cm","ph":"2"}],["incompleta","Ressecção incompleta?","radio",{"opts":{"0":"Não","1":"Sim"}}],["invasao","Invasão local (extratireoidiana)?","radio",{"opts":{"0":"Não","1":"Sim"}}],["metastase","Metástase a distância?","radio",{"opts":{"0":"Não","1":"Sim"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
