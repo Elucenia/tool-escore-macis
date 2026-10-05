@@ -1,0 +1,468 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field idade",
+    "input": {
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field idade",
+    "input": {
+      "idade": "",
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" idade",
+    "input": {
+      "idade": "NaN",
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" idade",
+    "input": {
+      "idade": "Infinity",
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" idade",
+    "input": {
+      "idade": "1e309",
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" idade",
+    "input": {
+      "idade": "invalid",
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} idade",
+    "input": {
+      "idade": {},
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true idade",
+    "input": {
+      "idade": true,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum idade",
+    "input": {
+      "idade": 4,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum idade",
+    "input": {
+      "idade": 110,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tamanho",
+    "input": {
+      "idade": 35,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": "",
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": "NaN",
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": "Infinity",
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": "1e309",
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": "invalid",
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": {},
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": true,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": -0.9,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tamanho",
+    "input": {
+      "idade": 35,
+      "tamanho": 22,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field incompleta",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "incompleta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field incompleta",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "incompleta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option incompleta",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "__ELUCENIA_INVALID_OPTION__",
+      "invasao": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "incompleta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field invasao",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "invasao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field invasao",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "invasao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option invasao",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "__ELUCENIA_INVALID_OPTION__",
+      "metastase": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "invasao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field metastase",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "metastase"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field metastase",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "metastase"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option metastase",
+    "input": {
+      "idade": 35,
+      "tamanho": 2,
+      "incompleta": "0",
+      "invasao": "0",
+      "metastase": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "metastase"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

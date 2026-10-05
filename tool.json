@@ -5,6 +5,7 @@
     "short": "Prognóstico do carcinoma papilífero de tireoide",
     "desc": "Escore MACIS para carcinoma papilífero de tireoide: metástase, idade, ressecção, invasão e tamanho, com a sobrevida câncer-específica em 20 anos.",
     "lead": "Estima a sobrevida câncer-específica em 20 anos no carcinoma papilífero de tireoide a partir de cinco dados disponíveis após a cirurgia.",
+    "kind": "Calculadora",
     "spec": [
       "cirurgia-de-cabeca-e-pescoco",
       "endocrinologia-e-metabologia",
@@ -12,7 +13,6 @@
       "oncologia-clinica",
       "medicina-nuclear"
     ],
-    "tier": 1,
     "fields": [
       [
         "idade",
@@ -73,35 +73,6 @@
       ]
     ],
     "formula": "<p><strong>MACIS</strong> = 3,1 (se idade ≤ 39 anos) ou 0,08 × idade (se ≥ 40 anos) + 0,3 × tamanho do tumor (cm) + 1 (ressecção incompleta) + 1 (invasão local) + 3 (metástase a distância).</p>",
-    "table": [
-      [
-        "MACIS",
-        "Sobrevida câncer-específica em 20 anos"
-      ],
-      [
-        "&lt; 6",
-        "99%"
-      ],
-      [
-        "6 a 6,99",
-        "89%"
-      ],
-      [
-        "7 a 7,99",
-        "56%"
-      ],
-      [
-        "≥ 8",
-        "24%"
-      ]
-    ],
-    "table_note": "Coorte da Mayo Clinic com 1.779 pacientes operados entre 1940 e 1989 (Hay 1993).",
-    "tips": [
-      "O MACIS prediz <strong>mortalidade</strong> pelo câncer; para decidir iodo radioativo e seguimento, use a estratificação de risco de recorrência da ATA.",
-      "A maioria dos pacientes fica abaixo de 6 pontos: o escore separa bem o pequeno grupo de alto risco.",
-      "Idade de 55 anos é o corte do estadiamento TNM (AJCC 8ª edição); o MACIS usa a idade de forma contínua a partir dos 40 anos.",
-      "Foi derivado para carcinoma papilífero: não aplique a carcinoma folicular, medular ou anaplásico."
-    ],
     "sources": [
       [
         "Hay ID et al. Predicting outcome in papillary thyroid carcinoma: development of a reliable prognostic scoring system in a cohort of 1779 patients surgically treated at one institution during 1940 through 1989. Surgery, 1993.",
@@ -178,9 +149,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -189,17 +157,498 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:44:15.523Z",
+      "total": 2160,
+      "passed": 2160,
+      "sourceRowCount": 2160,
+      "uniqueApiInputCount": 2160,
+      "sourceContextCount": 2160,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "e35aba1b3af54ec985f8439fd01fb7a907a7c26d39924043c98913b98595a1fb",
+        "total": 2160,
+        "bankRowCount": 2160,
+        "uniqueApiInputCount": 2160,
+        "sourceContextCount": 2160,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/seven-limited-source-independent-expectations-final26.json",
+            "sha256": "4b960d8c215321b3f059726a3b7bc6b35f0fe4d63a7ee845fbc6edb535a4f0cc"
+          },
+          {
+            "file": "reports/review-20261003/oncology-four-independent-expectations-final26.json",
+            "sha256": "2c3a5304f6cccc8881724df497af561eb6cfdb3b76e5c016e1c9f0a681c477b5"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+          "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+        },
+        "packagingRequirement": "Copy this V2 strictly scoped complete bank only into fresh frozen26 packages after independent peer; V1 and prior25 archives remain unchanged."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/seven-limited-source-input-identity-final26.json",
+          "sha256": "e184ba55d7cd2c90120c495d3143d067bd5d72ae98b914f22a75fb943e510d94"
+        },
+        "sourceRows": 2160,
+        "uniqueApiInputs": 2160,
+        "duplicateRows": 0
+      },
+      "scope": "Hay1993 original abstract equation:2160 bounded synthetic legal-schema inputs and age39/40 branch, exact decimal-hundredth score expectations. Original full paper not reviewed. No20-year survival percentage/bin, histologic extension, pediatric eligibility, prognostic calibration or full-method/clinical approval.",
+      "sources": [
+        {
+          "id": "escore-macis",
+          "edition": "Hay1993 Surgery114:1050–1057,discussion1057–1058",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8256208/",
+          "identity": "PMID8256208",
+          "access": "Original abstract directly opened/read through web tool (Methods/Results/Conclusions). Local direct fetch returned a challenge page; that file is not counted as medical evidence. Full paper/paywalled tables not read.",
+          "primaryFacts": {
+            "population": "1779 papillary thyroid carcinoma patients after primary operation; training764 treated1940–1964,validation1015 treated1965–1989;>26000patient-years.",
+            "equation": "Age≤39:3.1; age≥40:0.08×age. Add0.3×tumour size(cm),1 incomplete resection,1 local invasion,3 distant metastases."
+          },
+          "readScope": [
+            "Original PubMed abstract Methods/Results/Conclusions, lines229–233"
+          ],
+          "notVerified": [
+            "Full1993 article and exact original table typography",
+            "Other thyroid histologies or preoperative use",
+            "Pediatric eligibility, calibration, survival or treatment decisions"
+          ],
+          "evidenceFiles": []
+        }
+      ],
+      "evidencePath": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+      "evidenceSha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80",
+      "originalEvidence": {
+        "file": "reports/review-20261003/oncology-four-independent-source-check-final26.json",
+        "sha256": "61b59c9f707a2425440f6b71c5deb27cbddf401c9c8be32841a040898c4d1e56"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred.",
+        "recordedAt": "2026-10-04T18:58:12.259Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred."
+        },
+        "peer": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-independent-peer-final26-v2-r2.json",
+          "sha256": "28a96906dcfa0ce5272da34613c4ca61686204552a235ebc4adbb65e4ff6868c",
+          "summary": {
+            "checks": 18879,
+            "failed": 0,
+            "methods": 7,
+            "sourceRows": 2902,
+            "uniqueInputs": 2902,
+            "freshExecutions": 8706,
+            "helperAssertions": 25953,
+            "metadataMethods": 120,
+            "metadataRows": 52620,
+            "metadataUnique": 52548,
+            "metadataRepeats": 72
+          },
+          "scope": "Root independent peer of exact41 preimages/afterimages; independently frozen2902 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all11 previous scopes;21 fresh Node helper executions replay all7 limited numeric components without clinical approval."
+        },
+        "application": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-application-final26.json",
+          "sha256": "3b1cd7d57c7062aa640504095c1a7eca5b051af7c0c0c8d4d5b1965a869080da"
+        },
+        "reviewedBankScope": "Hay1993 original abstract equation:2160 bounded synthetic legal-schema inputs and age39/40 branch, exact decimal-hundredth score expectations. Original full paper not reviewed. No20-year survival percentage/bin, histologic extension, pediatric eligibility, prognostic calibration or full-method/clinical approval.",
+        "currentBinding": {
+          "source26BankSha256": "0541daff6c2cb1cbd30323bd73066a53d0ee692118fd5725cc7d031a91289c09",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/escore-macis/calculator.js",
+              "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/escore-macis/calculator.js",
+              "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/escore-macis/calculator.js",
+              "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 6480,
+      "actualVmExecutions": 6480,
+      "implementations": [
+        {
+          "id": "escore-macis",
+          "app": "website",
+          "file": "apps/website/private/tool-code/escore-macis/calculator.js",
+          "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+        },
+        {
+          "id": "escore-macis",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/escore-macis/calculator.js",
+          "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+        },
+        {
+          "id": "escore-macis",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/escore-macis/calculator.js",
+          "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+        }
+      ],
+      "qualifications": [
+        "Hay1993 original abstract equation:2160 bounded synthetic legal-schema inputs and age39/40 branch, exact decimal-hundredth score expectations. Original full paper not reviewed. No20-year survival percentage/bin, histologic extension, pediatric eligibility, prognostic calibration or full-method/clinical approval.",
+        "Original sourceExpected data retained alongside own expected raw-component projections; clinical codes/thresholds and survival fields deliberately excluded from the package replay.",
+        "All862 original historical fixtures/expected values/tolerances and approval flags preserved. Four inline metadata rows are only a declared subset of this complete downloadable bank."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicOutputProjection": {
+        "status": "only-verified-raw-numeric-components",
+        "recordedAt": "2026-10-04T16:50:00.122Z",
+        "sourceEvidence": {
+          "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+          "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+        },
+        "originalBank": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-stage-final26/apps/website/private/tool-code/escore-macis/independent-source-cases.json",
+          "sha256": "8b4269244b78bec5ca241ff6af2bdfaa200db8b77a8ff0a52690a81afac745b0"
+        },
+        "originalReportsPreserved": true,
+        "excluded": [
+          "Unexposed MASCC risk flag and USC/VNPI group expectations",
+          "MACIS survival and other untested returned raw fields",
+          "Karvonen exercise-zone main display and all untested main display values",
+          "Original API error prose; only rejection presence is tested"
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "MACIS/Hay 1993:idade/tamanho/ressecção/invasão/metástase; 3,1 até 39 anos vs 0,08 idade≥40",
+    "implementationVersion": "escore-macis@native-2026-10-03+396e9208d664",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8256208/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "MACIS = 3,1 (se idade ≤ 39 anos) ou 0,08 × idade (se ≥ 40 anos) + 0,3 × tamanho do tumor (cm) + 1 (ressecção incompleta) + 1 (invasão local) + 3 (metástase a distância).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade no diagnóstico",
+            "type": "num",
+            "min": 5,
+            "max": 100,
+            "unit": "anos",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tamanho",
+            "label": "Maior diâmetro do tumor",
+            "type": "num",
+            "min": 0.1,
+            "max": 20,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "incompleta",
+            "label": "Ressecção incompleta?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "invasao",
+            "label": "Invasão local (extratireoidiana)?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "metastase",
+            "label": "Metástase a distância?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          }
+        ],
+        "hash": "24de846b73c90b401e43462e3cb0ca7a40f7ead621bf5c2fb105330f62c56b07"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Hay ID et al. Predicting outcome in papillary thyroid carcinoma: development of a reliable prognostic scoring system in a cohort of 1779 patients surgically treated at one institution during 1940 through 1989. Surgery, 1993.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8256208/",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Predicting outcome in papillary thyroid carcinoma: development of a reliable prognostic scoring system in a cohort of 1779 patients surgically treated at one institution during 1940 through 1989.",
+            "year": "1993",
+            "firstPublicationDate": "1993-12-01",
+            "pmid": "8256208",
+            "journal": "Surgery",
+            "authors": "Hay ID, Bergstralh EJ, Goellner JR, Ebersold JR, Grant CS."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/8256208/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "0137478d5f6526e852d4a2f57f1a2776ba60497376ba3235a7b04da0a23c3164",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:44:15.523Z",
+        "total": 2160,
+        "passed": 2160,
+        "sourceRowCount": 2160,
+        "uniqueApiInputCount": 2160,
+        "sourceContextCount": 2160,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "e35aba1b3af54ec985f8439fd01fb7a907a7c26d39924043c98913b98595a1fb",
+          "total": 2160,
+          "bankRowCount": 2160,
+          "uniqueApiInputCount": 2160,
+          "sourceContextCount": 2160,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/seven-limited-source-independent-expectations-final26.json",
+              "sha256": "4b960d8c215321b3f059726a3b7bc6b35f0fe4d63a7ee845fbc6edb535a4f0cc"
+            },
+            {
+              "file": "reports/review-20261003/oncology-four-independent-expectations-final26.json",
+              "sha256": "2c3a5304f6cccc8881724df497af561eb6cfdb3b76e5c016e1c9f0a681c477b5"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+            "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+          },
+          "packagingRequirement": "Copy this V2 strictly scoped complete bank only into fresh frozen26 packages after independent peer; V1 and prior25 archives remain unchanged."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/seven-limited-source-input-identity-final26.json",
+            "sha256": "e184ba55d7cd2c90120c495d3143d067bd5d72ae98b914f22a75fb943e510d94"
+          },
+          "sourceRows": 2160,
+          "uniqueApiInputs": 2160,
+          "duplicateRows": 0
+        },
+        "scope": "Hay1993 original abstract equation:2160 bounded synthetic legal-schema inputs and age39/40 branch, exact decimal-hundredth score expectations. Original full paper not reviewed. No20-year survival percentage/bin, histologic extension, pediatric eligibility, prognostic calibration or full-method/clinical approval.",
+        "sources": [
+          {
+            "id": "escore-macis",
+            "edition": "Hay1993 Surgery114:1050–1057,discussion1057–1058",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8256208/",
+            "identity": "PMID8256208",
+            "access": "Original abstract directly opened/read through web tool (Methods/Results/Conclusions). Local direct fetch returned a challenge page; that file is not counted as medical evidence. Full paper/paywalled tables not read.",
+            "primaryFacts": {
+              "population": "1779 papillary thyroid carcinoma patients after primary operation; training764 treated1940–1964,validation1015 treated1965–1989;>26000patient-years.",
+              "equation": "Age≤39:3.1; age≥40:0.08×age. Add0.3×tumour size(cm),1 incomplete resection,1 local invasion,3 distant metastases."
+            },
+            "readScope": [
+              "Original PubMed abstract Methods/Results/Conclusions, lines229–233"
+            ],
+            "notVerified": [
+              "Full1993 article and exact original table typography",
+              "Other thyroid histologies or preoperative use",
+              "Pediatric eligibility, calibration, survival or treatment decisions"
+            ],
+            "evidenceFiles": []
+          }
+        ],
+        "evidencePath": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+        "evidenceSha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80",
+        "originalEvidence": {
+          "file": "reports/review-20261003/oncology-four-independent-source-check-final26.json",
+          "sha256": "61b59c9f707a2425440f6b71c5deb27cbddf401c9c8be32841a040898c4d1e56"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred.",
+          "recordedAt": "2026-10-04T18:58:12.259Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred."
+          },
+          "peer": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-independent-peer-final26-v2-r2.json",
+            "sha256": "28a96906dcfa0ce5272da34613c4ca61686204552a235ebc4adbb65e4ff6868c",
+            "summary": {
+              "checks": 18879,
+              "failed": 0,
+              "methods": 7,
+              "sourceRows": 2902,
+              "uniqueInputs": 2902,
+              "freshExecutions": 8706,
+              "helperAssertions": 25953,
+              "metadataMethods": 120,
+              "metadataRows": 52620,
+              "metadataUnique": 52548,
+              "metadataRepeats": 72
+            },
+            "scope": "Root independent peer of exact41 preimages/afterimages; independently frozen2902 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all11 previous scopes;21 fresh Node helper executions replay all7 limited numeric components without clinical approval."
+          },
+          "application": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-application-final26.json",
+            "sha256": "3b1cd7d57c7062aa640504095c1a7eca5b051af7c0c0c8d4d5b1965a869080da"
+          },
+          "reviewedBankScope": "Hay1993 original abstract equation:2160 bounded synthetic legal-schema inputs and age39/40 branch, exact decimal-hundredth score expectations. Original full paper not reviewed. No20-year survival percentage/bin, histologic extension, pediatric eligibility, prognostic calibration or full-method/clinical approval.",
+          "currentBinding": {
+            "source26BankSha256": "0541daff6c2cb1cbd30323bd73066a53d0ee692118fd5725cc7d031a91289c09",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/escore-macis/calculator.js",
+                "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/escore-macis/calculator.js",
+                "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/escore-macis/calculator.js",
+                "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 6480,
+        "actualVmExecutions": 6480,
+        "implementations": [
+          {
+            "id": "escore-macis",
+            "app": "website",
+            "file": "apps/website/private/tool-code/escore-macis/calculator.js",
+            "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+          },
+          {
+            "id": "escore-macis",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/escore-macis/calculator.js",
+            "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+          },
+          {
+            "id": "escore-macis",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/escore-macis/calculator.js",
+            "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+          }
+        ],
+        "qualifications": [
+          "Hay1993 original abstract equation:2160 bounded synthetic legal-schema inputs and age39/40 branch, exact decimal-hundredth score expectations. Original full paper not reviewed. No20-year survival percentage/bin, histologic extension, pediatric eligibility, prognostic calibration or full-method/clinical approval.",
+          "Original sourceExpected data retained alongside own expected raw-component projections; clinical codes/thresholds and survival fields deliberately excluded from the package replay.",
+          "All862 original historical fixtures/expected values/tolerances and approval flags preserved. Four inline metadata rows are only a declared subset of this complete downloadable bank."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicOutputProjection": {
+          "status": "only-verified-raw-numeric-components",
+          "recordedAt": "2026-10-04T16:50:00.122Z",
+          "sourceEvidence": {
+            "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+            "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+          },
+          "originalBank": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-stage-final26/apps/website/private/tool-code/escore-macis/independent-source-cases.json",
+            "sha256": "8b4269244b78bec5ca241ff6af2bdfaa200db8b77a8ff0a52690a81afac745b0"
+          },
+          "originalReportsPreserved": true,
+          "excluded": [
+            "Unexposed MASCC risk flag and USC/VNPI group expectations",
+            "MACIS survival and other untested returned raw fields",
+            "Karvonen exercise-zone main display and all untested main display values",
+            "Original API error prose; only rejection presence is tested"
+          ],
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+    },
+    "limits": "Prognóstico de carcinoma papilífero da tireoide a partir de dados disponíveis após a operação primária, incluindo completude da ressecção e tamanho em cm. Não extrapolar automaticamente para outra histologia ou uso pré-operatório sem informação de ressecção. A calibração pertence às coortes históricas estudadas.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.073Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Calibração em tratamentos atuais e probabilidades individuais de sobrevida não foram conferidas em validação clínica local."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-macis/calculator.js",
+    "bytes": 5138,
+    "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "3d134f76f7e63961d7245e2ed3ccb08036a42f2c43d9d07192115bd506f33974",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "b27066f90b6b1302660e587e82516cc60b4e046b7baf0388ed720343eabd39df",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "b27066f90b6b1302660e587e82516cc60b4e046b7baf0388ed720343eabd39df",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
