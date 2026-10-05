@@ -1,0 +1,917 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "escore-macis",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/escore-macis/calculator.js",
+    "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f",
+    "bytes": 5138
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "escore-macis",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+      "originalInput": {
+        "idade": 35,
+        "tamanho": 2,
+        "incompleta": "0",
+        "invasao": "0",
+        "metastase": "0"
+      },
+      "input": {
+        "idade": 35,
+        "tamanho": 2,
+        "incompleta": "0",
+        "invasao": "0",
+        "metastase": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "score": 3.7,
+          "sobrevida": 99
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "3,70",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 3.7,
+          "sobrevida": 99
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 35,
+            "tamanho": 2,
+            "incompleta": "0",
+            "invasao": "0",
+            "metastase": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+          "startedAt": "2026-10-05T17:39:06.914Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-macis",
+              "main": [
+                "3,70",
+                "pontos"
+              ],
+              "label": "MACIS",
+              "raw": {
+                "score": 3.7,
+                "sobrevida": 99
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ae91b48fc19adfbee65651d6680bfb7943c663af784654a272b630d93d24b6af",
+          "bytes": 145,
+          "elapsedMs": 4.581800000014482
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "startedAt": "2026-10-05T17:39:06.914Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-macis",
+            "main": [
+              "3,70",
+              "pontos"
+            ],
+            "label": "MACIS",
+            "raw": {
+              "score": 3.7,
+              "sobrevida": 99
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ae91b48fc19adfbee65651d6680bfb7943c663af784654a272b630d93d24b6af",
+        "bytes": 145,
+        "elapsedMs": 4.581800000014482
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 3.7,
+            "obtained": 3.7,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sobrevida",
+            "expected": 99,
+            "obtained": 99,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 3.7,
+            "obtained": 3.7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sobrevida",
+            "expected": 99,
+            "obtained": 99,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3,70",
+            "obtained": "3,70",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-macis",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+      "originalInput": {
+        "idade": 55,
+        "tamanho": 5,
+        "incompleta": "1",
+        "invasao": "0",
+        "metastase": "0"
+      },
+      "input": {
+        "idade": 55,
+        "tamanho": 5,
+        "incompleta": "1",
+        "invasao": "0",
+        "metastase": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "score": 6.9,
+          "sobrevida": 89
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "6,90",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 6.9,
+          "sobrevida": 89
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 55,
+            "tamanho": 5,
+            "incompleta": "1",
+            "invasao": "0",
+            "metastase": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+          "startedAt": "2026-10-05T17:39:07.228Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-macis",
+              "main": [
+                "6,90",
+                "pontos"
+              ],
+              "label": "MACIS",
+              "raw": {
+                "score": 6.9,
+                "sobrevida": 89
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "db4e7ba1c257992c9541c3bd9d1fc9718a4aac22d7bfb70aca52c414608da304",
+          "bytes": 145,
+          "elapsedMs": 2.8079000000143424
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "startedAt": "2026-10-05T17:39:07.228Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-macis",
+            "main": [
+              "6,90",
+              "pontos"
+            ],
+            "label": "MACIS",
+            "raw": {
+              "score": 6.9,
+              "sobrevida": 89
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "db4e7ba1c257992c9541c3bd9d1fc9718a4aac22d7bfb70aca52c414608da304",
+        "bytes": 145,
+        "elapsedMs": 2.8079000000143424
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 6.9,
+            "obtained": 6.9,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sobrevida",
+            "expected": 89,
+            "obtained": 89,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 6.9,
+            "obtained": 6.9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sobrevida",
+            "expected": 89,
+            "obtained": 89,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "6,90",
+            "obtained": "6,90",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-macis",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+      "originalInput": {
+        "idade": 60,
+        "tamanho": 4,
+        "incompleta": "0",
+        "invasao": "1",
+        "metastase": "0"
+      },
+      "input": {
+        "idade": 60,
+        "tamanho": 4,
+        "incompleta": "0",
+        "invasao": "1",
+        "metastase": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "score": 7,
+          "sobrevida": 56
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "7,00",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 7,
+          "sobrevida": 56
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 60,
+            "tamanho": 4,
+            "incompleta": "0",
+            "invasao": "1",
+            "metastase": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+          "startedAt": "2026-10-05T17:39:07.541Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-macis",
+              "main": [
+                "7,00",
+                "pontos"
+              ],
+              "label": "MACIS",
+              "raw": {
+                "score": 7,
+                "sobrevida": 56
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c857791aefd3567349c12619e4ef59c79b88a1591c7e1bc97f854299ee670d0c",
+          "bytes": 143,
+          "elapsedMs": 5.4725000000034925
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "startedAt": "2026-10-05T17:39:07.541Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-macis",
+            "main": [
+              "7,00",
+              "pontos"
+            ],
+            "label": "MACIS",
+            "raw": {
+              "score": 7,
+              "sobrevida": 56
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c857791aefd3567349c12619e4ef59c79b88a1591c7e1bc97f854299ee670d0c",
+        "bytes": 143,
+        "elapsedMs": 5.4725000000034925
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sobrevida",
+            "expected": 56,
+            "obtained": 56,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sobrevida",
+            "expected": 56,
+            "obtained": 56,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,00",
+            "obtained": "7,00",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-macis",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+      "originalInput": {
+        "idade": 70,
+        "tamanho": 5,
+        "incompleta": "0",
+        "invasao": "0",
+        "metastase": "1"
+      },
+      "input": {
+        "idade": 70,
+        "tamanho": 5,
+        "incompleta": "0",
+        "invasao": "0",
+        "metastase": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "score": 10.1,
+          "sobrevida": 24
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "10,10",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 10.1,
+          "sobrevida": 24
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 70,
+            "tamanho": 5,
+            "incompleta": "0",
+            "invasao": "0",
+            "metastase": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+          "startedAt": "2026-10-05T17:39:07.854Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-macis",
+              "main": [
+                "10,10",
+                "pontos"
+              ],
+              "label": "MACIS",
+              "raw": {
+                "score": 10.1,
+                "sobrevida": 24
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1ecdda83b2926b7ac8036fe14dd1d02ddbd72a361ca15823a21892d004f9c887",
+          "bytes": 147,
+          "elapsedMs": 2.4777999999932945
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-macis/calculate",
+        "startedAt": "2026-10-05T17:39:07.854Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-macis",
+            "main": [
+              "10,10",
+              "pontos"
+            ],
+            "label": "MACIS",
+            "raw": {
+              "score": 10.1,
+              "sobrevida": 24
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1ecdda83b2926b7ac8036fe14dd1d02ddbd72a361ca15823a21892d004f9c887",
+        "bytes": 147,
+        "elapsedMs": 2.4777999999932945
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 10.1,
+            "obtained": 10.1,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sobrevida",
+            "expected": 24,
+            "obtained": 24,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 10.1,
+            "obtained": 10.1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sobrevida",
+            "expected": 24,
+            "obtained": 24,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "10,10",
+            "obtained": "10,10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
