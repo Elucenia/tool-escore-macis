@@ -1,0 +1,1911 @@
+{
+  "id": "escore-macis",
+  "implementationVersion": "escore-macis@native-2026-10-05+a883b233dac3",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente da idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,10",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente do tamanho (0,3 × cm)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,60",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6: sobrevida câncer-específica em 20 anos de 99%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente da idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,40",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente do tamanho (0,3 × cm)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 a 6,99: sobrevida câncer-específica em 20 anos de 89%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente da idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,80",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente do tamanho (0,3 × cm)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,20",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 a 7,99: sobrevida câncer-específica em 20 anos de 56%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente da idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,60",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente do tamanho (0,3 × cm)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8: sobrevida câncer-específica em 20 anos de 24%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Age component",
+                "locale": "en",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3.10",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Size component (0,3 × cm)",
+                "locale": "en",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0.60",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6: 20-year cancer-specific survival of 99%",
+            "locale": "en",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Age component",
+                "locale": "en",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.40",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Size component (0,3 × cm)",
+                "locale": "en",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 to 6,99: 20-year cancer-specific survival of 89%",
+            "locale": "en",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Age component",
+                "locale": "en",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.80",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Size component (0,3 × cm)",
+                "locale": "en",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.20",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 to 7,99: 20-year cancer-specific survival of 56%",
+            "locale": "en",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Age component",
+                "locale": "en",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5.60",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Size component (0,3 × cm)",
+                "locale": "en",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "en",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8: 20-year cancer-specific survival of 24%",
+            "locale": "en",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente de la edad",
+                "locale": "es",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3,10",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente del tamaño (0,3 × cm)",
+                "locale": "es",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0,60",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6: supervivencia específica por cáncer a 20 años de 99%",
+            "locale": "es",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente de la edad",
+                "locale": "es",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,40",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente del tamaño (0,3 × cm)",
+                "locale": "es",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 a 6,99: supervivencia específica por cáncer a 20 años de 89%",
+            "locale": "es",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente de la edad",
+                "locale": "es",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,80",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente del tamaño (0,3 × cm)",
+                "locale": "es",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,20",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 a 7,99: supervivencia específica por cáncer a 20 años de 56%",
+            "locale": "es",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente de la edad",
+                "locale": "es",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5,60",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente del tamaño (0,3 × cm)",
+                "locale": "es",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "es",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8: supervivencia específica por cáncer a 20 años de 24%",
+            "locale": "es",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Composante de l’âge",
+                "locale": "fr",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3,10",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Composante de la taille (0,3 × cm)",
+                "locale": "fr",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0,60",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6 : survie spécifique au cancer à 20 ans de 99%",
+            "locale": "fr",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Composante de l’âge",
+                "locale": "fr",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,40",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Composante de la taille (0,3 × cm)",
+                "locale": "fr",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 à 6,99 : survie spécifique au cancer à 20 ans de 89%",
+            "locale": "fr",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Composante de l’âge",
+                "locale": "fr",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,80",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Composante de la taille (0,3 × cm)",
+                "locale": "fr",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,20",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 à 7,99 : survie spécifique au cancer à 20 ans de 56%",
+            "locale": "fr",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Composante de l’âge",
+                "locale": "fr",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5,60",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Composante de la taille (0,3 × cm)",
+                "locale": "fr",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "fr",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8 : survie spécifique au cancer à 20 ans de 24%",
+            "locale": "fr",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Alterskomponente",
+                "locale": "de",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3,10",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Größenkomponente (0,3 × cm)",
+                "locale": "de",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0,60",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6: 20-Jahres-krebsspezifisches Überleben von 99%",
+            "locale": "de",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Alterskomponente",
+                "locale": "de",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,40",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Größenkomponente (0,3 × cm)",
+                "locale": "de",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 bis 6,99: 20-Jahres-krebsspezifisches Überleben von 89%",
+            "locale": "de",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Alterskomponente",
+                "locale": "de",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,80",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Größenkomponente (0,3 × cm)",
+                "locale": "de",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,20",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 bis 7,99: 20-Jahres-krebsspezifisches Überleben von 56%",
+            "locale": "de",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Alterskomponente",
+                "locale": "de",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5,60",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Größenkomponente (0,3 × cm)",
+                "locale": "de",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "de",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8: 20-Jahres-krebsspezifisches Überleben von 24%",
+            "locale": "de",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente dell’età",
+                "locale": "it",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3,10",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente della dimensione (0,3 × cm)",
+                "locale": "it",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0,60",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6: sopravvivenza specifica per il cancro a 20 anni di 99%",
+            "locale": "it",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente dell’età",
+                "locale": "it",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,40",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente della dimensione (0,3 × cm)",
+                "locale": "it",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS da 6 a 6,99: sopravvivenza specifica per il cancro a 20 anni di 89%",
+            "locale": "it",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente dell’età",
+                "locale": "it",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4,80",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente della dimensione (0,3 × cm)",
+                "locale": "it",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,20",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS da 7 a 7,99: sopravvivenza specifica per il cancro a 20 anni di 56%",
+            "locale": "it",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Componente dell’età",
+                "locale": "it",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5,60",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Componente della dimensione (0,3 × cm)",
+                "locale": "it",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1,50",
+                "locale": "it",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8: sopravvivenza specifica per il cancro a 20 anni di 24%",
+            "locale": "it",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مكوّن العمر",
+                "locale": "ar",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "٣٫١٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مكوّن الحجم (0,3 × cm)",
+                "locale": "ar",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "٠٫٦٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6: البقاء النوعي للسرطان لمدة 20 سنة بنسبة ٩٩%",
+            "locale": "ar",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مكوّن العمر",
+                "locale": "ar",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "٤٫٤٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مكوّن الحجم (0,3 × cm)",
+                "locale": "ar",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "١٫٥٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS من 6 إلى 6,99: البقاء النوعي للسرطان لمدة 20 سنة بنسبة ٨٩%",
+            "locale": "ar",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مكوّن العمر",
+                "locale": "ar",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "٤٫٨٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مكوّن الحجم (0,3 × cm)",
+                "locale": "ar",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "١٫٢٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS من 7 إلى 7,99: البقاء النوعي للسرطان لمدة 20 سنة بنسبة ٥٦%",
+            "locale": "ar",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مكوّن العمر",
+                "locale": "ar",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "٥٫٦٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مكوّن الحجم (0,3 × cm)",
+                "locale": "ar",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "١٫٥٠",
+                "locale": "ar",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8: البقاء النوعي للسرطان لمدة 20 سنة بنسبة ٢٤%",
+            "locale": "ar",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年龄项",
+                "locale": "zh",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3.10",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大小项 (0,3 × cm)",
+                "locale": "zh",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0.60",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6：20 年癌症特异性生存率为 99%",
+            "locale": "zh",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年龄项",
+                "locale": "zh",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.40",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大小项 (0,3 × cm)",
+                "locale": "zh",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 到 6,99：20 年癌症特异性生存率为 89%",
+            "locale": "zh",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年龄项",
+                "locale": "zh",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.80",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大小项 (0,3 × cm)",
+                "locale": "zh",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.20",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 到 7,99：20 年癌症特异性生存率为 56%",
+            "locale": "zh",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年龄项",
+                "locale": "zh",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5.60",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大小项 (0,3 × cm)",
+                "locale": "zh",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "zh",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8：20 年癌症特异性生存率为 24%",
+            "locale": "zh",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年齢要素",
+                "locale": "ja",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3.10",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大きさの要素 (0,3 × cm)",
+                "locale": "ja",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0.60",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6：20年のがん特異的生存率は99%",
+            "locale": "ja",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年齢要素",
+                "locale": "ja",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.40",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大きさの要素 (0,3 × cm)",
+                "locale": "ja",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 から 6,99：20年のがん特異的生存率は89%",
+            "locale": "ja",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年齢要素",
+                "locale": "ja",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.80",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大きさの要素 (0,3 × cm)",
+                "locale": "ja",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.20",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 から 7,99：20年のがん特異的生存率は56%",
+            "locale": "ja",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "年齢要素",
+                "locale": "ja",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5.60",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大きさの要素 (0,3 × cm)",
+                "locale": "ja",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "ja",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8：20年のがん特異的生存率は24%",
+            "locale": "ja",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "आयु घटक",
+                "locale": "hi",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "3.10",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  3.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आकार घटक (0,3 × cm)",
+                "locale": "hi",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "0.60",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  0.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS < 6: 20-वर्षीय कैंसर-विशिष्ट जीवित रहने की दर 99%",
+            "locale": "hi",
+            "template": "documented-authored-15846c0c17378a282be8",
+            "sourceNumbers": [
+              99
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "आयु घटक",
+                "locale": "hi",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.40",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आकार घटक (0,3 × cm)",
+                "locale": "hi",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 6 से 6,99: 20-वर्षीय कैंसर-विशिष्ट जीवित रहने की दर 89%",
+            "locale": "hi",
+            "template": "documented-authored-38e328f5f242d50f85a5",
+            "sourceNumbers": [
+              89
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "आयु घटक",
+                "locale": "hi",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "4.80",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  4.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आकार घटक (0,3 × cm)",
+                "locale": "hi",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.20",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS 7 से 7,99: 20-वर्षीय कैंसर-विशिष्ट जीवित रहने की दर 56%",
+            "locale": "hi",
+            "template": "documented-authored-3358a45a46f48a9886e9",
+            "sourceNumbers": [
+              56
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "आयु घटक",
+                "locale": "hi",
+                "template": "documented-authored-e560b0bc1bcc0084df06"
+              },
+              "value": {
+                "text": "5.60",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  5.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आकार घटक (0,3 × cm)",
+                "locale": "hi",
+                "template": "documented-authored-f57fe8ba4a97bd452b55"
+              },
+              "value": {
+                "text": "1.50",
+                "locale": "hi",
+                "template": "documented-authored-16f64e90a557d3d6c580",
+                "sourceNumbers": [
+                  1.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MACIS ≥ 8: 20-वर्षीय कैंसर-विशिष्ट जीवित रहने की दर 24%",
+            "locale": "hi",
+            "template": "documented-authored-e694d4861517a0d1e4e8",
+            "sourceNumbers": [
+              24
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

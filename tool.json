@@ -340,7 +340,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "MACIS/Hay 1993:idade/tamanho/ressecção/invasão/metástase; 3,1 até 39 anos vs 0,08 idade≥40",
-    "implementationVersion": "escore-macis@native-2026-10-03+396e9208d664",
+    "implementationVersion": "escore-macis@native-2026-10-05+a883b233dac3",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8256208/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -613,7 +613,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+      "implementationHash": "a883b233dac310907d1e60bc56ba6a1e2e5a989191c4fa468ae00c66070072c9",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-macis@native-2026-10-03+396e9208d664",
+          "previousImplementationHash": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f",
+          "implementationHash": "a883b233dac310907d1e60bc56ba6a1e2e5a989191c4fa468ae00c66070072c9",
+          "scientificBodySha256": "b97f36000f540a5133bae5e0683203d83903454335376247ab14ebc862a8e9c5",
+          "metadataContractHash": "24de846b73c90b401e43462e3cb0ca7a40f7ead621bf5c2fb105330f62c56b07",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Prognóstico de carcinoma papilífero da tireoide a partir de dados disponíveis após a operação primária, incluindo completude da ressecção e tamanho em cm. Não extrapolar automaticamente para outra histologia ou uso pré-operatório sem informação de ressecção. A calibração pertence às coortes históricas estudadas.",
     "sourceLimitEvidence": {
@@ -632,20 +660,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-macis/calculator.js",
-    "bytes": 5138,
-    "sha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f"
+    "bytes": 5343,
+    "sha256": "a883b233dac310907d1e60bc56ba6a1e2e5a989191c4fa468ae00c66070072c9"
   },
-  "sourceToolSha256": "3d134f76f7e63961d7245e2ed3ccb08036a42f2c43d9d07192115bd506f33974",
+  "sourceToolSha256": "def9bac7dd2a528b5c5a7ffdd082b3d19b8297ce27213b7cfcea8d79b9c2912e",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "b27066f90b6b1302660e587e82516cc60b4e046b7baf0388ed720343eabd39df",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "b27066f90b6b1302660e587e82516cc60b4e046b7baf0388ed720343eabd39df",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

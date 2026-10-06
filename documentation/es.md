@@ -84,3 +84,47 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+MACIS < 6: supervivencia específica por cáncer a 20 años de 99%
+
+| Detalles del resultado | |
+| --- | --- |
+| Componente de la edad | 3,10 |
+| Componente del tamaño (0,3 × cm) | 0,60 |
+
+
+### 2
+
+MACIS 6 a 6,99: supervivencia específica por cáncer a 20 años de 89%
+
+| Detalles del resultado | |
+| --- | --- |
+| Componente de la edad | 4,40 |
+| Componente del tamaño (0,3 × cm) | 1,50 |
+
+
+### 3
+
+MACIS 7 a 7,99: supervivencia específica por cáncer a 20 años de 56%
+
+| Detalles del resultado | |
+| --- | --- |
+| Componente de la edad | 4,80 |
+| Componente del tamaño (0,3 × cm) | 1,20 |
+
+
+### 4
+
+MACIS ≥ 8: supervivencia específica por cáncer a 20 años de 24%
+
+| Detalles del resultado | |
+| --- | --- |
+| Componente de la edad | 5,60 |
+| Componente del tamaño (0,3 × cm) | 1,50 |
+

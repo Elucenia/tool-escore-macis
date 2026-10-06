@@ -1,0 +1,284 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-macis",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "31538edb4fcaf64d1dc97956281d043282992e32",
+    "oldEngineSha256": "396e9208d66481c71b2455be9ae582b98e0914d5f0646b56552476f1f202bd1f",
+    "currentEngineSha256": "a883b233dac310907d1e60bc56ba6a1e2e5a989191c4fa468ae00c66070072c9"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "35 anos, 2 cm, sem outros fatores: 3,1 + 0,6 = 3,7",
+      "input": {
+        "idade": 35,
+        "tamanho": 2,
+        "incompleta": "0",
+        "invasao": "0",
+        "metastase": "0"
+      },
+      "publicOutput": {
+        "id": "escore-macis",
+        "main": [
+          "3,70",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 3.7,
+          "sobrevida": 99
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 3.7,
+          "sobrevida": 99
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3,70",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "level": "low",
+        "verdict": "MACIS &lt; 6: sobrevida câncer-específica em 20 anos de 99%",
+        "rows": [
+          [
+            "Componente da idade",
+            "3,10"
+          ],
+          [
+            "Componente do tamanho (0,3 × cm)",
+            "0,60"
+          ]
+        ],
+        "raw": {
+          "score": 3.7,
+          "sobrevida": 99
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "55 anos, 5 cm, ressecção incompleta: 4,4 + 1,5 + 1 = 6,9",
+      "input": {
+        "idade": 55,
+        "tamanho": 5,
+        "incompleta": "1",
+        "invasao": "0",
+        "metastase": "0"
+      },
+      "publicOutput": {
+        "id": "escore-macis",
+        "main": [
+          "6,90",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 6.9,
+          "sobrevida": 89
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 6.9,
+          "sobrevida": 89
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6,90",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "level": "mid",
+        "verdict": "MACIS 6 a 6,99: sobrevida câncer-específica em 20 anos de 89%",
+        "rows": [
+          [
+            "Componente da idade",
+            "4,40"
+          ],
+          [
+            "Componente do tamanho (0,3 × cm)",
+            "1,50"
+          ]
+        ],
+        "raw": {
+          "score": 6.9,
+          "sobrevida": 89
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Limite: 60 anos, 4 cm, invasão local: 4,8 + 1,2 + 1 = 7,0",
+      "input": {
+        "idade": 60,
+        "tamanho": 4,
+        "incompleta": "0",
+        "invasao": "1",
+        "metastase": "0"
+      },
+      "publicOutput": {
+        "id": "escore-macis",
+        "main": [
+          "7,00",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 7,
+          "sobrevida": 56
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 7,
+          "sobrevida": 56
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,00",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "level": "high",
+        "verdict": "MACIS 7 a 7,99: sobrevida câncer-específica em 20 anos de 56%",
+        "rows": [
+          [
+            "Componente da idade",
+            "4,80"
+          ],
+          [
+            "Componente do tamanho (0,3 × cm)",
+            "1,20"
+          ]
+        ],
+        "raw": {
+          "score": 7,
+          "sobrevida": 56
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "70 anos, 5 cm, metástase a distância: 5,6 + 1,5 + 3 = 10,1",
+      "input": {
+        "idade": 70,
+        "tamanho": 5,
+        "incompleta": "0",
+        "invasao": "0",
+        "metastase": "1"
+      },
+      "publicOutput": {
+        "id": "escore-macis",
+        "main": [
+          "10,10",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "raw": {
+          "score": 10.1,
+          "sobrevida": 24
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 10.1,
+          "sobrevida": 24
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10,10",
+          "pontos"
+        ],
+        "label": "MACIS",
+        "level": "high",
+        "verdict": "MACIS ≥ 8: sobrevida câncer-específica em 20 anos de 24%",
+        "rows": [
+          [
+            "Componente da idade",
+            "5,60"
+          ],
+          [
+            "Componente do tamanho (0,3 × cm)",
+            "1,50"
+          ]
+        ],
+        "raw": {
+          "score": 10.1,
+          "sobrevida": 24
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}
